@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Brain Tumor Detection</title>
+  <meta name="description" content="Upload an MRI Scan of a brain and I will tell you if the scan has a tumor or not!">
+  <meta name="author" content="Prathik Lolla">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+        font-family: 'Poppins';
+        font-weight: bold;
+        font-size: 22px;
+    }
+    .title-sec {
+      text-align: center;
+      
+    }
+    .upload-sec {
+      text-align: center;
+    }
+    .pred-sec {
+      text-align: center;
+    }
+    img {
+        border-radius: 8%;
+    }
+    </style>
+
+</head>
+
+<body>
+  <div class="title-sec">
+    <h1>Brain Tumor Detection</h1>
+    <h3>Upload an MRI scan of a brain and see if the brain has a tumor</h3>
+    <img src="/static/images/brain.jpg" alt="MRI scan of brain" width="500" height="300">
+  </div>
+  <form action="/submit" method="POST" enctype="multipart/form-data">
+    <div class="upload-sec">
+      <label for="MRI">Upload:</label>
+      <input type="file" name="mri"
+            accept="image/png, image/jpeg, image/jpg">
+      <button type="submit" a href="result.html">Submit</button>
+    </div>
+    <div class="pred-sec">
+      <h3>{{classification}}</h3>
+    </div>
+  </form>
+  
+  
+    
+  
+</body>
+</html>
