@@ -1,13 +1,13 @@
 import os
 import cv2
 from flask import Flask, request, render_template
-from tensorflow import keras
+from keras.models import load_model
 import numpy as np
 from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
-model = keras.models.load_model('/Users/prathiklolla/Documents/heroku-app/Brain-Tumor-Detection/')
+model = load_model('/Users/prathiklolla/Documents/heroku-app/Brain-Tumor-Detection/')
 
 
 def output_string(classification):
