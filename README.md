@@ -14,7 +14,7 @@ This is the main page where users can upload their scans to the site:
 After uploading the scan, a POST request is made to send the image data to the API which will return the prediction
 
 This is the response the user will see if their scan doesn't indicate any sign of a tumor
-![Result Page (NO)](https://user-images.githubusercontent.com/19865455/177808026-714ceb9a-ee2c-4070-a479-616922847ef2.png")
+![Result Page (NO)](https://user-images.githubusercontent.com/19865455/177808026-714ceb9a-ee2c-4070-a479-616922847ef2.png)
 Users can always chose to go back and upload another scan
 
 This is the response the user will see if their scan does show a tumor
