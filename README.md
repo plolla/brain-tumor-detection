@@ -1,8 +1,8 @@
-# Brain-Tumor-Detection
+## Brain-Tumor-Detection
 
-Built an image classifier that looks at brain MRI scans and classifies brains with tumors and brains without tumors. Utilized transfer learning and fine tuned pretrained models (MobileNetV2, VGG16, and ResNet50). Used TensorFlow and Keras, as well as NumPy, Matplotlib, OpenCV, and Scikit-Learn. 
+# Summary
 
-Using Flask to host the application. Used HTML/CSS for frontend
+Built an image classifier that looks at brain MRI scans and classifies brains with tumors and brains without tumors. Utilized transfer learning and fine tuned pretrained models (MobileNetV2, VGG16, and ResNet50)
 
 Currently working on deploying app publicly
 
@@ -26,6 +26,8 @@ This is the response the user will see if their scan does show a tumor
 - [Flask](https://flask.palletsprojects.com/en/1.1.x/)
 - [TensorFlow](https://www.tensorflow.org)
 - [Numpy](https://numpy.org)
+- [Matplotlib](https://matplotlib.org)
+- [OpenCV](https://opencv.org)
 - Python
 - JavaScript
 - HTML/CSS
